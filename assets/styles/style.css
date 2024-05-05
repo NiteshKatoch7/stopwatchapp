@@ -1,1 +1,80 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e9ecff;
+}
+body .stopwatch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px 45px;
+  background-color: #fff;
+  width: 50%;
+  margin: auto;
+  position: relative;
+}
+@media only screen and (max-width: 1200px) {
+  body .stopwatch-wrapper {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body .stopwatch-wrapper {
+    width: 95%;
+  }
+}
+body .stopwatch-wrapper .title {
+  font-size: 80px;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  transform: translateY(-60%);
+  color: #6054ba;
+}
+body .stopwatch-wrapper .timer {
+  font-size: 150px;
+  font-weight: 700;
+  color: rgba(96, 84, 186, 0.4);
+}
+@media only screen and (max-width: 576px) {
+  body .stopwatch-wrapper .timer {
+    font-size: 130px;
+  }
+}
+body .stopwatch-wrapper .timer-buttons {
+  padding: 30px 0;
+}
+body .stopwatch-wrapper .timer-buttons .buttons {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  min-width: 200px;
+  text-align: center;
+}
+@media only screen and (max-width: 576px) {
+  body .stopwatch-wrapper .timer-buttons .buttons {
+    width: 100%;
+  }
+}
+body .stopwatch-wrapper .bg-primary {
+  background-color: #6054ba !important;
+  opacity: 0.8;
+}
+body .stopwatch-wrapper .bg-success {
+  background-color: #4CAF50 !important;
+  opacity: 0.8;
+}
+body .stopwatch-wrapper .bg-danger {
+  background-color: #FF0000 !important;
+  opacity: 0.8;
+}/*# sourceMappingURL=style.css.map */
